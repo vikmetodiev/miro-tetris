@@ -1,38 +1,49 @@
-.App {
+.tetris {
+  height: 100vh;
+  background-image: url("./img/space-03.jpg");
+  background-size: cover;
+}
+
+.header {
+  font-style: oblique;
+  font-weight: bold;
+  text-shadow: azure 2px 1px;
+  color: #e5ccff;
+  text-decoration: underline;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.tetris-body {
+  cursor: auto !important;
+}
+.tetris-body:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttonStart:hover {
+  color: azure !important;
+  background-color: goldenrod !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttonStart {
+  color: goldenrod !important;
+  background-color: azure !important;
+  border-radius: 5px !important;
+  font-size: 18px !important;
+  min-width: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.buttonPause{
+  color: tomato !important;
+  background-color: azure !important;
+  border-radius: 5px !important;
+  font-size: 18px !important;
+  min-width: 200px;
+  height: 30px !important;
+  padding: 0px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.buttonPause:hover{
+  color:azure !important;
+  background-color: tomato !important;
 }
